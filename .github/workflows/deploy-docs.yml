@@ -38,6 +38,11 @@ jobs:
 
       - name: Build Storybook
         run: npm run build-storybook
+        env:
+          STORYBOOK_BASE: /components-v2/
+
+      - name: Fix absolute paths for GitHub Pages
+        run: sed -i 's|src="/vite-inject-mocker-entry.js"|src="/components-v2/vite-inject-mocker-entry.js"|g' storybook-static/iframe.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
