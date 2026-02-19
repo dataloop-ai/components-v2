@@ -25,7 +25,7 @@ const meta: Meta<typeof DlButton> = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/design/REPLACE_WITH_YOUR_FILE_KEY/ComponentLibrary?node-id=0-1',
+      url: 'https://www.figma.com/design/hYO14NfmXfbeh8jF8Pv1cq/Design-system-2026?node-id=0-1&t=vctxuHclX2T3paQs-1',
     },
   },
 }
